@@ -6,4 +6,4 @@ This repo contains examples of training a model with scikit-learn and SparkML, a
 Notebooks:
 - 01_titantic_sklearn - Example of training a random forest classifier using scikit-learn.
 - 02_titantic_sparkml - Example of training a random forest classifier using Apache Spark's MLlib library.
-- 03_titantic_mlflow - Example of using MLflow to log experiments and register models.
+- 03_titantic_mlflow - Example of using MLflow to track experiments and register models.
