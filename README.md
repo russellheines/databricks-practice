@@ -4,6 +4,7 @@ This repo contains examples of training a model with scikit-learn and SparkML, a
 - SparkML splits the dataset across a cluster of worker machines. Instead of processing the data sequentially, it performs operations in parallel, allowing the pipeline to scale seamlessly.
 
 Notebooks:
-- 01_titantic_sklearn - Example of training a random forest classifier using scikit-learn.
-- 02_titantic_sparkml - Example of training a random forest classifier using Apache Spark's MLlib library.
-- 03_titantic_mlflow - Example of using MLflow to track experiments and register models.
+- 01_titanic_sklearn - Example of training a random forest classifier using scikit-learn.
+- 02_titanic_sparkml - Example of training a random forest classifier using Apache Spark's MLlib library.
+- 03_titanic_mlflow - Example of using MLflow to log experiments and register models.
+- 04_titanic_hyperopt - Example of using Hyperopt to automatically find the best hyperparameters.
