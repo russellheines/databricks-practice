@@ -7,4 +7,5 @@ Notebooks:
 - 01_titanic_sklearn - Example of training a random forest classifier using scikit-learn.
 - 02_titanic_sparkml - Example of training a random forest classifier using Apache Spark's MLlib library.
 - 03_titanic_mlflow - Example of using MLflow to log experiments and register models.
-- 04_titanic_hyperopt - Example of using Hyperopt to automatically find the best hyperparameters.
+- 04_titanic_hyperopt - Example of using Hyperopt to find the best hyperparameters.
+- 05_titanic_inference - Examples of interference using native Pandas, Spark UDF, and native Spark pipelines.
