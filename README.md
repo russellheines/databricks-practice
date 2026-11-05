@@ -4,6 +4,7 @@ This repo contains examples of training a model with scikit-learn and SparkML, a
 - SparkML splits the dataset across a cluster of worker machines. Instead of processing the data sequentially, it performs operations in parallel, allowing the pipeline to scale seamlessly.
 
 Notebooks:
-- 01_titanic_sklearn - Example of training a random forest classifier using scikit-learn.
-- 02_titanic_sparkml - Example of training a random forest classifier using Apache Spark's MLlib library.
-- 03_titanic_inference - Examples of inference using native Pandas, Spark UDF, and native Spark pipelines.
+- 01_titanic_datasets - Example of loadng training and test datasets into Delta tables
+- 02_titanic_sklearn - Example of training a random forest classifier using scikit-learn.
+- 03_titanic_sparkml - Example of training a random forest classifier using Apache Spark's MLlib library.
+- 04_titanic_inference - Examples of inference using native Pandas, Spark UDF, and native Spark pipelines.
