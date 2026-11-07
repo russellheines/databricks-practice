@@ -8,4 +8,4 @@ Notebooks:
 - 02_titanic_sklearn - Trains a random forest classifier using scikit-learn.
 - 03_titanic_sparkml - Trains a random forest classifier using Apache Spark's MLlib library.
 - 04_titanic_inference - Performs inference using native Pandas, Spark UDF, and native Spark pipelines.
-- 05_titanic_pipeline - Defines a pipelipe to orchestrate the workflow end-to-end.
+- 05_titanic_pipeline - Orchestrates the entire end-to-end workflow.
