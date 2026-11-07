@@ -1,0 +1,31 @@
+resources:
+  jobs:
+    Titanic_Pipeline:
+      name: Titanic Pipeline
+      tasks:
+        - task_key: Load_datasets
+          notebook_task:
+            notebook_path: /Workspace/Users/russellheines@gmail.com/databricks-practice/01_titanic_datasets
+            source: WORKSPACE
+        - task_key: Train_SparkML
+          depends_on:
+            - task_key: Load_datasets
+          notebook_task:
+            notebook_path: /Workspace/Users/russellheines@gmail.com/databricks-practice/03_titanic_sparkml
+            source: WORKSPACE
+        - task_key: Train_sklearn
+          depends_on:
+            - task_key: Load_datasets
+          notebook_task:
+            notebook_path: /Workspace/Users/russellheines@gmail.com/databricks-practice/02_titanic_sklearn
+            source: WORKSPACE
+        - task_key: Perform_inference
+          depends_on:
+            - task_key: Train_sklearn
+            - task_key: Train_SparkML
+          notebook_task:
+            notebook_path: /Workspace/Users/russellheines@gmail.com/databricks-practice/04_titanic_inference
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
